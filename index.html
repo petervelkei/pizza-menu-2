@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pizzamenü</title>
-  <style>
-    html, body {
-      margin: 0;
-      height: 100%;
-      overflow: hidden;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-  <iframe src="menu.pdf"></iframe>
+  <div class="pdf-container">
+    <object data="menu.pdf" type="application/pdf">
+      <p>A PDF megtekintéséhez kattints ide: <a href="menu.pdf">Menü megnyitása</a></p>
+    </object>
+  </div>
 </body>
 </html>
